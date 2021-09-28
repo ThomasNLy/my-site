@@ -16,7 +16,7 @@ function P5Sketch(props) {
     canvasHeight = canvasParentRef.offsetHeight;
     p5.createCanvas(canvasWidth, canvasHeight).parent(canvasParentRef);
     p5.background("#214976");
-    for (let i = 0; i < 5000; i++) {
+    for (let i = 0; i < 3000; i++) {
       particleSystem.push(
         new Particle(
           p5.createVector(

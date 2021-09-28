@@ -4,8 +4,12 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <section>
-      <div className="wrapper">
-        <P5Sketch styling="p5-canvas" /> <p>hello how are you</p>
+      <div className="content-wrapper">
+        <P5Sketch styling="p5-canvas" />
+        <p>Thomas Nguyen Ly</p>
+        <p>Web Developer</p>
+        <p>Interactive Designer</p>
+        <a href="#">Explore</a>
       </div>
     </section>
   );

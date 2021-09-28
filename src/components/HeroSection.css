@@ -1,11 +1,3 @@
-.wrapper {
-  /* text-align: center; */
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  height: fit-content;
-  text-align: center;
-}
 .p5-canvas {
   /* margin-left: 20em; */
   width: 500px;
