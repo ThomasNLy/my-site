@@ -5,7 +5,7 @@ function ProjectCard(props) {
   return (
     <div>
       <img src={imgSrc} alt={altText} srcset={imgSrcSet} />
-      <h2>{projectTitle}</h2>
+      <h3>{projectTitle}</h3>
       <a href={link}>View Project</a>
     </div>
   );
