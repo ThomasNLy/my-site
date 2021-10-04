@@ -1,0 +1,45 @@
+.nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  padding: 0.5em 0 0.5em 0;
+  border-bottom: 0.05em solid black;
+}
+.menu-button {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-menu-item {
+  color: black;
+}
+
+.nav-menu-open {
+  position: fixed;
+  top: 2.1em;
+  z-index: 3;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(190, 190, 190);
+}
+.nav-menu-close {
+  display: none;
+}
+
+.nav-menu-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4);
+  row-gap: 1em;
+  text-align: center;
+}
+.nav-menu-item {
+  font-size: 2rem;
+}
