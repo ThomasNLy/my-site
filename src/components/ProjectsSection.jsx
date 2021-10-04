@@ -9,6 +9,7 @@ import phostopThumbnailMobile from "../images/phostop_thumbnail_mobile.png";
 function ProjectSection() {
   return (
     <section>
+      <h2>PROJECTS</h2>
       <ProjectCard
         imgSrc={covidStatThumbnailMobile}
         imgSrcSet={`${covidStatThumbnailMobile} 400w, ${covidStatThumbnail} 800w`}
