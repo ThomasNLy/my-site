@@ -41,7 +41,7 @@ function P5Sketch(props) {
   };
 
   const draw = (p5) => {
-    p5.frameRate(20);
+    p5.frameRate(25);
     p5.background("#214976");
 
     particleSystem.forEach((p) => {
