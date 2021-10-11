@@ -1,0 +1,14 @@
+.skills {
+  display: grid;
+  row-gap: 2em;
+}
+
+.section-header {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 0.25em;
+}
+h3 {
+  font-weight: bold;
+  font-size: 1.75rem;
+}
