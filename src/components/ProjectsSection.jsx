@@ -15,21 +15,21 @@ function ProjectSection() {
         imgSrcSet={`${covidStatThumbnailMobile} 400w, ${covidStatThumbnail} 800w`}
         altText="thumbnail of COVID STATS CAN's landing page"
         projectTitle="COVID STATS CAN"
-        link="#"
+        link="/covid-stats-can"
       />
       <ProjectCard
         imgSrc={loginSystemThumbnailMobile}
         imgSrcSet={`${loginSystemThumbnailMobile} 400w, ${loginSystemThumbnail} 800w`}
         altText="thumbnail of Login System's landing page"
         projectTitle="LOGIN SYSTEM"
-        link="#"
+        link="/login-system"
       />
       <ProjectCard
         imgSrc={phostopThumbnail}
         imgSrcSet={`${phostopThumbnailMobile} 400w, ${phostopThumbnail} 800w`}
         altText="thumbnail of PhoStop's landing page"
         projectTitle="PHOSTOP"
-        link="#"
+        link="/phostop"
       />
     </section>
   );
