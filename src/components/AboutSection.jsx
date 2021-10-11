@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutSection.css";
-import styles from "./Sections.module.css";
+import styles from "./css-modules/Sections.module.css";
 function AboutSection() {
   return (
     <section>
