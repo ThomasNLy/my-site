@@ -2,7 +2,7 @@
   /* margin-left: 20em; */
   margin-top: 5em;
   width: 95vw;
-  height: 20em;
+  height: 50vh;
 }
 .content-wrapper {
   width: fit-content;
@@ -13,4 +13,25 @@
   margin-top: 1em;
   font-size: 2rem;
   line-height: 2.25rem;
+}
+
+.explore-indicator {
+  text-align: center;
+  margin-top: 5vh;
+}
+.explore-indicator p {
+  font-size: 1.25rem;
+}
+
+.fa-caret-down {
+  font-size: 3rem;
+  animation: animatedCaret 1.5s linear infinite alternate;
+}
+@keyframes animatedCaret {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0.1em);
+  }
 }
