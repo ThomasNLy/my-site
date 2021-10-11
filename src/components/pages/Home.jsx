@@ -1,7 +1,7 @@
 import React from "react";
 import HeroSection from "../HeroSection";
 import SkillsSection from "../SkillsSection";
-import AboutSection from "../../AboutSection";
+import AboutSection from "../AboutSection";
 import ProjectSection from "../ProjectsSection";
 
 function Home() {

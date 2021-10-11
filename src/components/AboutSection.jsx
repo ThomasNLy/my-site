@@ -2,7 +2,7 @@ import React from "react";
 function AboutSection() {
   return (
     <section>
-      <h3>ABOUT</h3>
+      <h2>ABOUT</h2>
       <p>
         Hi! And welcome to my website. My name is Thomas and I am an aspiring
         Web Developer/Front End Developer. I graduated with a degree in Digital
