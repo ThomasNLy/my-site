@@ -6,40 +6,47 @@
   width: 100vw;
   padding: 0.5em 0 0.5em 0;
   border-bottom: 0.05em solid black;
+  z-index: 1;
 }
 .menu-button {
   margin-left: 1em;
   margin-right: 1em;
 }
 
+.fa-times {
+  font-size: 1.25rem;
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.nav-menu-item {
-  color: black;
+  position: fixed;
+  top: 2.1em;
+
+  width: 100vw;
+  height: 100vh;
+  left: -100vw;
+  transition: all 0.5s ease;
 }
 
 .nav-menu-open {
-  position: fixed;
-  top: 2.1em;
-  z-index: 3;
-  width: 100vw;
-  height: 100vh;
   background-color: rgb(190, 190, 190);
+  left: 0;
+  z-index: 3;
+  transition: all 0.5s ease;
 }
-.nav-menu-close {
-  display: none;
+
+.nav-menu-item {
+  color: black;
+  font-size: 2rem;
+  height: 400px;
 }
 
 .nav-menu-content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4);
+  /* grid-template-rows: repeat(4); */
   row-gap: 1em;
   text-align: center;
-}
-.nav-menu-item {
-  font-size: 2rem;
 }
