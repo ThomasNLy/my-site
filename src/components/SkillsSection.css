@@ -3,16 +3,6 @@
   row-gap: 1.25em;
 }
 
-.section-header {
-  font-weight: bold;
-  font-size: 2rem;
-  padding-bottom: 0.5em;
-}
-.skill-set h3 {
-  font-weight: bold;
-  font-size: 1.75rem;
-}
-
 .skill-set li {
   font-size: 1.25rem;
 }
