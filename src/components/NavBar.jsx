@@ -13,21 +13,17 @@ function NavBar() {
   return (
     <div>
       <nav className="nav-bar">
-        <div className="menu-button" onClick={menuButtonClick}>
+        <div className="menu-button " onClick={menuButtonClick}>
           {showMenu ? (
-            <i class="fas fa-times"></i>
+            <i className="fas fa-times"></i>
           ) : (
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           )}
         </div>
         <a className="navbar-logo" href="#">
           THOMAS NGUYEN
         </a>
-        <div
-          className={
-            showMenu ? "nav-menu nav-menu-open" : "nav-menu nav-menu-close"
-          }
-        >
+        <div className={showMenu ? "nav-menu nav-menu-open" : "nav-menu"}>
           <ul className="nav-menu-content">
             <li>
               <a className="nav-menu-item" href="#">
