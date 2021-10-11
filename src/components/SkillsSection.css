@@ -1,14 +1,24 @@
 .skills {
   display: grid;
-  row-gap: 2em;
+  row-gap: 1.25em;
 }
 
 .section-header {
   font-weight: bold;
   font-size: 2rem;
-  padding-bottom: 0.25em;
+  padding-bottom: 0.5em;
 }
-h3 {
+.skill-set h3 {
   font-weight: bold;
   font-size: 1.75rem;
+}
+
+.skill-set li {
+  font-size: 1.25rem;
+}
+
+.subskills {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
 }
