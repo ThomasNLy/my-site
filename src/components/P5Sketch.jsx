@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
-let canvasWidth;
+//let canvasWidth;
 let canvasHeight;
 let particleSystem = [];
 
 function P5Sketch(props) {
+  const [p5, setP5] = useState(null);
+  const [canvasParentRef, setCanvasParentRef] = useState(null);
+  const [canvasWidth, setCanvasWidth] = useState(window.innerWidth * 0.95);
   const styling = props.styling;
+
+  useEffect(() => {
+    window.addEventListener("resize", windowResized);
+    return () => window.removeEventListener("resize", windowResized);
+  });
+
   const setup = (p5, canvasParentRef) => {
+    setP5(p5);
+    setCanvasParentRef(canvasParentRef);
     //adds a css class in order to manipulate the styling with a stylesheet
     canvasParentRef.classList.add(styling);
 
     //changes the size of the p5 sketch canvas to match that of the parent's size
-    canvasWidth = canvasParentRef.offsetWidth;
+    setCanvasWidth(canvasParentRef.offsetWidth);
     canvasHeight = canvasParentRef.offsetHeight;
     p5.createCanvas(canvasWidth, canvasHeight).parent(canvasParentRef);
     p5.background("#214976");
@@ -74,6 +85,17 @@ function P5Sketch(props) {
       this.p5.fill(255, 255, this.p5.random(240, 255), this.opacity);
       this.p5.noStroke();
       this.p5.ellipse(this.loc.x, this.loc.y, 5, 5);
+    }
+  }
+
+  function windowResized() {
+    if (p5) {
+      p5.resizeCanvas(
+        canvasParentRef.offsetWidth,
+        canvasParentRef.offsetHeight
+      );
+      setCanvasWidth(canvasParentRef.offsetWidth);
+      canvasHeight = canvasParentRef.offsetHeight;
     }
   }
   return <Sketch setup={setup} draw={draw} />;
