@@ -1,12 +1,13 @@
 import React from "react";
 import "./SkillsSection.css";
+import styles from "./Sections.module.css";
 function SkillsSection() {
   return (
     <section>
-      <h2 className="section-header">SKILLS</h2>
+      <h2 className={styles.sectionH2Header}>SKILLS</h2>
       <div className="skills">
         <div className="skill-set">
-          <h3>PROGRAMMING</h3>
+          <h3 className={styles.sectionH3Header}>PROGRAMMING</h3>
           <ul className="subskills">
             <li>HTML</li>
             <li>CSS</li>
@@ -15,14 +16,14 @@ function SkillsSection() {
           </ul>
         </div>
         <div className="skill-set">
-          <h3>FRAMEWORKS</h3>
+          <h3 className={styles.sectionH3Header}>FRAMEWORKS</h3>
           <ul className="subskills">
             <li>React</li>
             <li>Bootstrap</li>
           </ul>
         </div>
         <div className="skill-set">
-          <h3>DESIGN</h3>
+          <h3 className={styles.sectionH3Header}>DESIGN</h3>
           <ul className="subskills">
             <li>Adobe XD</li>
             <li>Photoshop</li>
