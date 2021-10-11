@@ -11,7 +11,10 @@ function HeroSection() {
           <p>Web Developer</p>
           <p>Interactive Designer</p>
         </div>
-        <a href="#">Explore</a>
+        <div className="explore-indicator">
+          <p>Explore</p>
+          <i className="fas fa-caret-down"></i>
+        </div>
       </div>
     </section>
   );
