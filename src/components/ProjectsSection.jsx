@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import styles from "./css-modules/Sections.module.css";
 import covidStatThumbnail from "../images/covid_stats_thumbnail.png";
 import covidStatThumbnailMobile from "../images/covid_stats_thumbnail_mobile.png";
 import loginSystemThumbnail from "../images/login_system_thumbnail.png";
@@ -9,7 +10,7 @@ import phostopThumbnailMobile from "../images/phostop_thumbnail_mobile.png";
 function ProjectSection() {
   return (
     <section>
-      <h2>PROJECTS</h2>
+      <h2 className={styles.sectionH2Header}>PROJECTS</h2>
       <ProjectCard
         imgSrc={covidStatThumbnailMobile}
         imgSrcSet={`${covidStatThumbnailMobile} 400w, ${covidStatThumbnail} 800w`}
