@@ -6,8 +6,8 @@ function SkillsSection() {
       <h2 className="section-header">SKILLS</h2>
       <div className="skills">
         <div className="skill-set">
-          <h3 className="">PROGRAMMING</h3>
-          <ul>
+          <h3>PROGRAMMING</h3>
+          <ul className="subskills">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -16,14 +16,14 @@ function SkillsSection() {
         </div>
         <div className="skill-set">
           <h3>FRAMEWORKS</h3>
-          <ul>
+          <ul className="subskills">
             <li>React</li>
             <li>Bootstrap</li>
           </ul>
         </div>
         <div className="skill-set">
           <h3>DESIGN</h3>
-          <ul>
+          <ul className="subskills">
             <li>Adobe XD</li>
             <li>Photoshop</li>
             <li>Illustrator</li>
