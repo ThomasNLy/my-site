@@ -1,0 +1,4 @@
+.projects-container {
+  display: grid;
+  row-gap: 2.5em;
+}
