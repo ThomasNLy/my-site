@@ -5,7 +5,7 @@ function SkillsSection() {
   return (
     <section>
       <h2 className={styles.sectionH2Header}>SKILLS</h2>
-      <div className="skills">
+      <div className="skills-container">
         <div className="skill-set">
           <h3 className={styles.sectionH3Header}>PROGRAMMING</h3>
           <ul className="subskills">
