@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import "./NavBar.css";
 
 function NavBar() {
@@ -11,9 +12,15 @@ function NavBar() {
   function closeMenu() {
     setShowMenu(false);
   }
+
+  function scrollWithOffset(el) {
+    const yCoordiante = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -50;
+    window.scrollTo({ top: yCoordiante + yOffset });
+  }
   return (
     <div>
-      <nav className="nav-bar">
+      <nav className="navbar">
         <div className="menu-button " onClick={menuButtonClick}>
           {showMenu ? (
             <i className="fas fa-times"></i>
@@ -21,9 +28,9 @@ function NavBar() {
             <i className="fas fa-bars"></i>
           )}
         </div>
-        <a className="navbar-logo" href="#">
+        <Link className="navbar-logo" to="/">
           THOMAS NGUYEN
-        </a>
+        </Link>
         <div className={showMenu ? "nav-menu nav-menu-open" : "nav-menu"}>
           <ul className="nav-menu-content">
             <li>
@@ -35,19 +42,37 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <a className="nav-menu-item" href="#">
+              <HashLink
+                to="/#skills-section"
+                scroll={(el) => scrollWithOffset(el)}
+                className="nav-menu-item"
+                onClick={closeMenu}
+              >
                 Skills
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a className="nav-menu-item" href="#">
+              {/* <a className="nav-menu-item" href="#">
                 About
-              </a>
+              </a> */}
+              <HashLink
+                to="/#about-section"
+                scroll={(el) => scrollWithOffset(el)}
+                className="nav-menu-item"
+                onClick={closeMenu}
+              >
+                About
+              </HashLink>
             </li>
             <li>
-              <a className="nav-menu-item" href="#">
+              <HashLink
+                to="/#projects-section"
+                scroll={(el) => scrollWithOffset(el)}
+                className="nav-menu-item"
+                onClick={closeMenu}
+              >
                 Projects
-              </a>
+              </HashLink>
             </li>
           </ul>
         </div>
