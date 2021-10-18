@@ -3,7 +3,7 @@ import P5Sketch from "./P5Sketch";
 import "./HeroSection.css";
 function HeroSection() {
   return (
-    <section>
+    <section className="hero-section">
       <div className="content-wrapper">
         <P5Sketch styling="p5-canvas" />
         <div className="hero-text">
