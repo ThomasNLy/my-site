@@ -6,16 +6,28 @@ function Footer() {
       <h2>Thomas Nguyen Ly</h2>
       <ul>
         <li>
-          <a href="#">Contact</a>
+          <a href="mailto:thomas.nguyen47@gmail.com">Contact</a>
         </li>
         <li>
           <a href="#">Resume/CV</a>
         </li>
         <li>
-          <a href="#">LinkedIn</a>
+          <a
+            href="https://www.linkedin.com/in/thomas-nguyen-ly-09a3351b2/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
         <li>
-          <a href="#">GitHub</a>
+          <a
+            href="https://github.com/SunWukong97"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </li>
       </ul>
     </footer>
