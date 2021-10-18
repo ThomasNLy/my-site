@@ -1,18 +1,24 @@
+:root {
+  --header-font-weight: bold;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.7rem;
+}
+
 .sectionH2Header {
-  font-weight: bold;
-  font-size: 2rem;
+  font-weight: var(--header-font-weight);
+  font-size: var(--h2-font-size);
   padding-bottom: 0.5em;
 }
 
 .sectionH3Header {
-  font-weight: bold;
-  font-size: 1.75rem;
+  font-weight: var(--header-font-weight);
+  font-size: var(--h3-font-size);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .sectionSizing {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
