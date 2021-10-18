@@ -3,7 +3,7 @@ import "./SkillsSection.css";
 import styles from "./css-modules/Sections.module.css";
 function SkillsSection() {
   return (
-    <section>
+    <section id="skills-section">
       <h2 className={styles.sectionH2Header}>SKILLS</h2>
       <div className="skills-container">
         <div className="skill-set">
