@@ -27,7 +27,7 @@ function P5Sketch(props) {
     canvasHeight = canvasParentRef.offsetHeight;
     p5.createCanvas(canvasWidth, canvasHeight).parent(canvasParentRef);
     p5.background("#214976");
-    for (let i = 0; i < 3000; i++) {
+    for (let i = 0; i < 2000; i++) {
       particleSystem.push(
         new Particle(
           p5.createVector(
@@ -69,7 +69,7 @@ function P5Sketch(props) {
         p5.cos(this.theta) * 2,
         p5.sin(this.theta) * 2
       );
-      this.accel = 1;
+      // this.accel = 1;
       this.opacity = 255;
       this.p5 = p5;
     }
@@ -78,11 +78,11 @@ function P5Sketch(props) {
       this.display();
     }
     update() {
-      this.vel.mult(this.accel);
+      // this.vel.mult(this.accel);
       this.loc.add(this.vel);
     }
     display() {
-      this.p5.fill(255, 255, this.p5.random(240, 255), this.opacity);
+      this.p5.fill(255, 255, 255, this.opacity);
       this.p5.noStroke();
       this.p5.ellipse(this.loc.x, this.loc.y, 5, 5);
     }
