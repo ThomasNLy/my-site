@@ -3,7 +3,7 @@ import "./AboutSection.css";
 import styles from "./css-modules/Sections.module.css";
 function AboutSection() {
   return (
-    <section>
+    <section id="about-section">
       <h2 className={styles.sectionH2Header}>ABOUT</h2>
       <p>
         Hi! And welcome to my website. My name is Thomas and I am an aspiring

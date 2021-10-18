@@ -10,7 +10,7 @@ import phostopThumbnail from "../images/phostop_thumbnail.png";
 import phostopThumbnailMobile from "../images/phostop_thumbnail_mobile.png";
 function ProjectSection() {
   return (
-    <section>
+    <section id="projects-section">
       <h2 className={styles.sectionH2Header}>PROJECTS</h2>
       <div className="projects-container">
         <ProjectCard
