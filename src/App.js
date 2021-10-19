@@ -16,21 +16,18 @@ function App() {
     <React.Fragment>
       <Router>
         <NavBar />
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/covid-stats-can" component={CovidStatsCan} />
-          <Route path="/login-system" component={LoginSystem} />
-          <Route path="/phostop" component={PhoStop} />
-        </Switch>
-        <Footer />
+        <div className="container">
+          <div class="page-content">
+            <Switch>
+              <Route path="/" component={Home} exact />
+              <Route path="/covid-stats-can" component={CovidStatsCan} />
+              <Route path="/login-system" component={LoginSystem} />
+              <Route path="/phostop" component={PhoStop} />
+            </Switch>
+          </div>
+          <Footer />
+        </div>
       </Router>
-      {/* <div className="container">
-        <HeroSection />
-        <SkillsSection />
-        <AboutSection />
-        <ProjectSection />
-        <Footer />
-      </div> */}
     </React.Fragment>
   );
 }
