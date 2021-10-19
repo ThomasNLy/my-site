@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+
 function Footer() {
   return (
     <footer>
@@ -8,9 +9,9 @@ function Footer() {
         <li>
           <a href="mailto:thomas.nguyen47@gmail.com">Contact</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#">Resume/CV</a>
-        </li>
+        </li> */}
         <li>
           <a
             href="https://www.linkedin.com/in/thomas-nguyen-ly-09a3351b2/"
@@ -22,7 +23,7 @@ function Footer() {
         </li>
         <li>
           <a
-            href="https://github.com/SunWukong97"
+            href="https://github.com/ThomasNLy"
             target="_blank"
             rel="noreferrer"
           >
