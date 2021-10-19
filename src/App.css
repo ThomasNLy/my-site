@@ -147,11 +147,17 @@ section {
 }
 
 .container {
-  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
   max-width: 95vw;
   width: 95vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.page-content {
+  padding-top: 2em;
+  padding-bottom: 8em;
 }
 
 a {
