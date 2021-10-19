@@ -1,7 +1,7 @@
 import React from "react";
 function PhoStop() {
   return (
-    <div className="container">
+    <div>
       <h1>PhoStop</h1>
     </div>
   );

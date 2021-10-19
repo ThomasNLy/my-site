@@ -6,12 +6,12 @@ import ProjectSection from "../ProjectsSection";
 
 function Home() {
   return (
-    <div className="container">
+    <React.Fragment>
       <HeroSection />
       <SkillsSection />
       <AboutSection />
       <ProjectSection />
-    </div>
+    </React.Fragment>
   );
 }
 export default Home;
