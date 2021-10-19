@@ -34,9 +34,6 @@ function NavBar() {
         <div className={showMenu ? "nav-menu nav-menu-open" : "nav-menu"}>
           <ul className="nav-menu-content">
             <li>
-              {/* <a className="nav-menu-item" href="#">
-                Home
-              </a> */}
               <Link to="/" className="nav-menu-item" onClick={closeMenu}>
                 Home
               </Link>
@@ -52,9 +49,6 @@ function NavBar() {
               </HashLink>
             </li>
             <li>
-              {/* <a className="nav-menu-item" href="#">
-                About
-              </a> */}
               <HashLink
                 to="/#about-section"
                 scroll={(el) => scrollWithOffset(el)}
