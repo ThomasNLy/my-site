@@ -12,6 +12,7 @@
 .navbar-logo {
   color: black;
   font-weight: bold;
+  font-size: 1.25rem;
 }
 .menu-button {
   margin-left: 1em;
@@ -46,6 +47,30 @@
   color: black;
   font-size: 2rem;
   height: 400px;
+  /*pos needs to be relative to draw underline animation*/
+  position: relative;
+}
+
+/*the underline item itself*/
+.nav-menu-item::before {
+  /*content is what will be dispalyed
+  bottom makes sure it is below the item it will be displayed under
+  right shows how far it will go */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/*animating the underline when item is hovered*/
+.nav-menu-item:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
 }
 
 .nav-menu-content {
@@ -54,4 +79,41 @@
   /* grid-template-rows: repeat(4); */
   row-gap: 1em;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-button {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 0.7em 0 0.7em 0;
+  }
+  .nav-menu {
+    display: block;
+
+    position: static;
+    top: 0;
+
+    width: fit-content;
+    height: fit-content;
+    margin-right: 3em;
+  }
+
+  .nav-menu-content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+
+    text-align: center;
+  }
+
+  .nav-menu-item {
+    color: black;
+    font-size: 1.25rem;
+  }
+  .navbar-logo {
+    margin-left: 2em;
+  }
 }
