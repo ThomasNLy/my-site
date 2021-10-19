@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
-//let canvasWidth;
 let canvasHeight;
 let particleSystem = [];
 
