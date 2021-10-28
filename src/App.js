@@ -17,7 +17,7 @@ function App() {
       <Router>
         <NavBar />
         <div className="container">
-          <div class="page-content">
+          <div className="page-content">
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/covid-stats-can" component={CovidStatsCan} />
