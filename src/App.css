@@ -164,6 +164,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 93vw;
