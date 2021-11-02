@@ -2,13 +2,22 @@ import React, { useEffect, useState } from "react";
 import Sketch from "react-p5";
 
 let canvasHeight;
+let canvasWidth;
 let particleSystem = [];
 
 function P5Sketch(props) {
   const [p5, setP5] = useState(null);
   const [canvasParentRef, setCanvasParentRef] = useState(null);
-  const [canvasWidth, setCanvasWidth] = useState(window.innerWidth * 0.95);
   const styling = props.styling;
+  canvasHeight = window.innerHeight * 0.45;
+  if (window.innerWidth >= 768) {
+    canvasWidth = window.innerWidth * 0.93;
+  }
+  if (window.innerWidth >= 1024) {
+    canvasWidth = window.innerWidth * 0.7;
+  } else {
+    canvasWidth = window.innerWidth * 0.95;
+  }
 
   useEffect(() => {
     window.addEventListener("resize", windowResized);
@@ -22,11 +31,11 @@ function P5Sketch(props) {
     canvasParentRef.classList.add(styling);
 
     //changes the size of the p5 sketch canvas to match that of the parent's size
-    setCanvasWidth(canvasParentRef.offsetWidth);
-    canvasHeight = canvasParentRef.offsetHeight;
+
+    //canvasHeight = canvasParentRef.offsetWidth;
     p5.createCanvas(canvasWidth, canvasHeight).parent(canvasParentRef);
     p5.background("#214976");
-    for (let i = 0; i < 2000; i++) {
+    for (let i = 0; i < 1000; i++) {
       particleSystem.push(
         new Particle(
           p5.createVector(
@@ -89,12 +98,20 @@ function P5Sketch(props) {
 
   function windowResized() {
     if (p5) {
-      p5.resizeCanvas(
-        canvasParentRef.offsetWidth,
-        canvasParentRef.offsetHeight
-      );
-      setCanvasWidth(canvasParentRef.offsetWidth);
-      canvasHeight = canvasParentRef.offsetHeight;
+      if (window.innerWidth >= 768) {
+        //canvasWidth = window.innerWidth * 0.95;
+        canvasWidth = window.innerWidth * 0.93;
+      }
+      if (window.innerWidth >= 1024) {
+        //canvasWidth = window.innerWidth * 0.95;
+        canvasWidth = window.innerWidth * 0.7;
+      } else {
+        canvasWidth = window.innerWidth * 0.95;
+      }
+      //canvasWidth = window.innerWidth * 0.95;
+      p5.resizeCanvas(canvasWidth, canvasParentRef.offsetHeight);
+      //canvasHeight = canvasParentRef.offsetHeight;
+      canvasHeight = window.innerHeight * 0.45;
     }
   }
   return <Sketch setup={setup} draw={draw} />;
