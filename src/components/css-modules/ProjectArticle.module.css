@@ -1,0 +1,32 @@
+:root {
+  --header-font-weight: bold;
+  --h1Header: 2.5rem;
+  --link-line-height: 1.5em;
+  --article-description-spacing-top: 1.75em;
+  --article-description-spacing-bottom: 1.75em;
+}
+
+.projectTitle {
+  font-weight: var(--header-font-weight);
+  font-size: var(--h1Header);
+}
+
+.articleImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.imageCaption {
+  color: grey;
+  margin-top: 0.25em;
+}
+
+.projectLink {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.articleDescription {
+  margin-top: var(--article-description-spacing-top);
+  margin-bottom: var(--article-description-spacing-bottom);
+}
