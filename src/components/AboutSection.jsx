@@ -8,7 +8,7 @@ function AboutSection() {
       <p>
         Hi! And welcome to my website. My name is Thomas and I am an aspiring
         Web Developer/Front End Developer. I graduated with a degree in Digital
-        MEdia and some of my interests are UI/UX design, creative coding,
+        Media and some of my interests are UI/UX design, creative coding,
         creating interactive media and watching Korean dramas.
       </p>
       <a className="cv-link" href="#">
