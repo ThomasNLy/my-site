@@ -1,0 +1,45 @@
+.animatedLinkBlue {
+  position: relative;
+}
+
+/*the underline item itself*/
+.animatedLinkBlue::before {
+  /*content is what will be dispalyed
+  bottom makes sure it is below the item it will be displayed under
+  right shows how far it will go */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1em;
+  background-color: blue;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/*animating the underline when item is hovered*/
+.animatedLinkBlue:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+
+.animatedLinkBlack {
+  position: relative;
+}
+.animatedLinkBlack::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0.1em;
+  background-color: black;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.animatedLinkBlack:hover::before {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
