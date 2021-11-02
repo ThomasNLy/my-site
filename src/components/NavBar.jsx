@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import linkStyles from "./css-modules/AnimatedLinks.module.css";
 import "./NavBar.css";
 
 function NavBar() {
@@ -34,7 +35,11 @@ function NavBar() {
         <div className={showMenu ? "nav-menu nav-menu-open" : "nav-menu"}>
           <ul className="nav-menu-content">
             <li>
-              <Link to="/" className="nav-menu-item" onClick={closeMenu}>
+              <Link
+                to="/"
+                className={`nav-menu-item ${linkStyles.animatedLinkBlack}`}
+                onClick={closeMenu}
+              >
                 Home
               </Link>
             </li>
@@ -42,7 +47,7 @@ function NavBar() {
               <HashLink
                 to="/#skills-section"
                 scroll={(el) => scrollWithOffset(el)}
-                className="nav-menu-item"
+                className={`nav-menu-item ${linkStyles.animatedLinkBlack}`}
                 onClick={closeMenu}
               >
                 Skills
@@ -52,7 +57,7 @@ function NavBar() {
               <HashLink
                 to="/#about-section"
                 scroll={(el) => scrollWithOffset(el)}
-                className="nav-menu-item"
+                className={`nav-menu-item ${linkStyles.animatedLinkBlack}`}
                 onClick={closeMenu}
               >
                 About
@@ -62,7 +67,7 @@ function NavBar() {
               <HashLink
                 to="/#projects-section"
                 scroll={(el) => scrollWithOffset(el)}
-                className="nav-menu-item"
+                className={`nav-menu-item ${linkStyles.animatedLinkBlack}`}
                 onClick={closeMenu}
               >
                 Projects
