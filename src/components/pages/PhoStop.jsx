@@ -23,14 +23,25 @@ function PhoStop() {
           create top tier delicious meals.
         </p>
         <p>Built with HTML, CSS and JavaScript.</p>
-        <a href="#" className={styles.projectLink}>
+        <a
+          href="https://github.com/ThomasNLy/project_1_restaurant"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.projectLink}
+        >
           Source Code
         </a>
-        <a href="#" className={styles.projectLink}>
+        <a
+          href="https://thomasnly.github.io/project_1_restaurant/"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.projectLink}
+        >
           Go to website
         </a>
       </div>
       <img
+        className={styles.articleImage}
         src={phostopHomepage}
         alt="The entire homepage of Phostop's website"
       />
