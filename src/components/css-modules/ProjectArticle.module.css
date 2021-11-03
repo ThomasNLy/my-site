@@ -1,18 +1,22 @@
 :root {
   --header-font-weight: bold;
-  --h1Header: 2.5rem;
+  --h1-font-size: 2.25rem;
+  --header--alignment: center;
   --link-line-height: 1.5em;
   --article-description-spacing-top: 1.75em;
   --article-description-spacing-bottom: 1.75em;
 }
 
 .projectTitle {
+  margin-top: 1em;
   font-weight: var(--header-font-weight);
-  font-size: var(--h1Header);
+  font-size: var(--h1-font-size);
+  text-align: var(--header--alignment);
 }
 
 .articleImage {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
