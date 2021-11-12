@@ -12,7 +12,7 @@ function PhoStop() {
           className={styles.articleImage}
           src={phostopThumbnailMobile}
           alt="The PhoStop's landing page hero section"
-          srcset={`${phostopThumbnailMobile} 400w, ${phostopThumbnnail} 800w`}
+          srcSet={`${phostopThumbnailMobile} 400w, ${phostopThumbnnail} 800w`}
         />
         <figcaption className={styles.imageCaption}>Website</figcaption>
       </figure>
