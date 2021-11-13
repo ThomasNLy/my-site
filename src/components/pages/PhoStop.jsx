@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css-modules/ProjectArticle.module.css";
-import phostopThumbnailMobile from "../../images/phostop_thumbnail_mobile.png";
-import phostopThumbnnail from "../../images/phostop_thumbnail.png";
+
+import phostopThumbnail from "../../images/phostop_thumbnail.png";
 import phostopHomepage from "../../images/phostop_homepage.png";
 function PhoStop() {
   return (
@@ -10,9 +10,8 @@ function PhoStop() {
       <figure>
         <img
           className={styles.articleImage}
-          src={phostopThumbnailMobile}
+          src={phostopThumbnail}
           alt="The PhoStop's landing page hero section"
-          srcSet={`${phostopThumbnailMobile} 400w, ${phostopThumbnnail} 800w`}
         />
         <figcaption className={styles.imageCaption}>Website</figcaption>
       </figure>
