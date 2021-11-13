@@ -167,6 +167,9 @@ a {
 p {
   margin-bottom: 1em;
 }
+b {
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) {
   .container {
