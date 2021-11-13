@@ -1,7 +1,8 @@
 :root {
   --header-font-weight: bold;
   --h1-font-size: 2.25rem;
-  --header--alignment: center;
+  --header-alignment: center;
+  --header-spacing-bottom: 1.75em;
   --link-line-height: 1.5em;
   --article-description-spacing-top: 1.75em;
   --article-description-spacing-bottom: 1.75em;
@@ -11,7 +12,8 @@
   margin-top: 1em;
   font-weight: var(--header-font-weight);
   font-size: var(--h1-font-size);
-  text-align: var(--header--alignment);
+  text-align: var(--header-alignment);
+  padding-bottom: var(--header-spacing-bottom);
 }
 
 .articleImage {
