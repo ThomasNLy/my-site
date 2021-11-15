@@ -5,6 +5,7 @@ import "./App.css";
 
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./components/pages/Home";
 import CovidStatsCan from "./components/pages/CovidStatsCan";
@@ -18,6 +19,7 @@ function App() {
         <NavBar />
         <div className="container">
           <div className="page-content">
+            <ScrollToTop />
             <Switch>
               <Route path="/" component={Home} exact />
               <Route path="/covid-stats-can" component={CovidStatsCan} />
