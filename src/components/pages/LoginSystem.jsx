@@ -58,12 +58,18 @@ function LoginSystem() {
           Go to website
         </a>
       </div>
-      <img
-        className={styles.articleImage}
-        src={loginSystemForgotpasswordPic}
-        alt=""
-      />
-      <img className={styles.articleImage} src={loginSystemProfilePic} alt="" />
+      <div className={styles.multiImageContainer}>
+        <img
+          className={styles.articleImage}
+          src={loginSystemForgotpasswordPic}
+          alt=""
+        />
+        <img
+          className={styles.articleImage}
+          src={loginSystemProfilePic}
+          alt=""
+        />
+      </div>
       <div className={styles.articleDescription}>
         <p>
           One of the most important things I wanted to focus on with this
