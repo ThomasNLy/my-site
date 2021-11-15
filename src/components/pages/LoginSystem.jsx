@@ -62,12 +62,12 @@ function LoginSystem() {
         <img
           className={styles.articleImage}
           src={loginSystemForgotpasswordPic}
-          alt=""
+          alt="The forgot password page"
         />
         <img
           className={styles.articleImage}
           src={loginSystemProfilePic}
-          alt=""
+          alt="The account page with a module asking  if the user wants to delete their account"
         />
       </div>
       <div className={styles.articleDescription}>
