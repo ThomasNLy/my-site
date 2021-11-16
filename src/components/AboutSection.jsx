@@ -10,9 +10,14 @@ function AboutSection() {
         Hi! And welcome to my website. My name is Thomas and I am an aspiring
         Web Developer/Front End Developer. I graduated with a degree in Digital
         Media and some of my interests are UI/UX design, creative coding,
-        creating interactive media and watching Korean dramas.
+        creating interactive media and video game development.
       </p>
-      <a className={`cv-link ${linkStyles.animatedLinkBlue}`} href="#">
+      <a
+        className={`cv-link ${linkStyles.animatedLinkBlue}`}
+        href="https://docs.google.com/document/d/18ANrP7eHyplLL9P2I0maKEOk4HFeu61G/edit?usp=sharing&ouid=117781079038070538627&rtpof=true&sd=true"
+        target="_blank"
+        rel="noreferrer"
+      >
         CV/Resume
       </a>
     </section>
