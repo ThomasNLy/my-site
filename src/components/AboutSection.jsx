@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutSection.css";
 import styles from "./css-modules/Sections.module.css";
+import linkStyles from "./css-modules/AnimatedLinks.module.css";
 function AboutSection() {
   return (
     <section id="about-section">
@@ -11,7 +12,7 @@ function AboutSection() {
         Media and some of my interests are UI/UX design, creative coding,
         creating interactive media and watching Korean dramas.
       </p>
-      <a className="cv-link" href="#">
+      <a className={`cv-link ${linkStyles.animatedLinkBlue}`} href="#">
         CV/Resume
       </a>
     </section>
