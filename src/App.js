@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
+//components
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
+//pages
 import Home from "./components/pages/Home";
 import CovidStatsCan from "./components/pages/CovidStatsCan";
 import LoginSystem from "./components/pages/LoginSystem";
