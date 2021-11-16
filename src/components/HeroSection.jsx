@@ -7,7 +7,7 @@ function HeroSection() {
       <div className="content-wrapper">
         <P5Sketch styling="p5-canvas" />
         <div className="hero-text">
-          <p>Thomas Nguyen Ly</p>
+          <p>Thomas Nguyen</p>
           <p>Web Developer</p>
           <p>Interactive Designer</p>
         </div>
