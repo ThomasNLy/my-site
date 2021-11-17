@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import "./App.css";
 
@@ -17,21 +17,21 @@ import PhoStop from "./components/pages/PhoStop";
 function App() {
   return (
     <React.Fragment>
-      <HashRouter basename="/">
+      <Router>
         <NavBar />
         <div className="container">
           <div className="page-content">
             <ScrollToTop />
-            <Switch>
-              <Route path="/" component={Home} exact />
-              <Route path="/covid-stats-can" component={CovidStatsCan} />
-              <Route path="/login-system" component={LoginSystem} />
-              <Route path="/phostop" component={PhoStop} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/covid-stats-can" element={<CovidStatsCan />} />
+              <Route path="/login-system" element={<LoginSystem />} />
+              <Route path="/phostop" element={<PhoStop />} />
+            </Routes>
           </div>
           <Footer />
         </div>
-      </HashRouter>
+      </Router>
     </React.Fragment>
   );
 }
