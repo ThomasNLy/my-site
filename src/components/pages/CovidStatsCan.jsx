@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../css-modules/ProjectArticle.module.css";
 import covidStatsThumbnail from "../../images/covid_stats_thumbnail.png";
 import covidStatsStatusBar from "../../images/covid_stats_statusBar.png";
+import linkStyles from "../css-modules/AnimatedLinks.module.css";
 function CovidStatsCan() {
   return (
     <article>
@@ -12,7 +13,7 @@ function CovidStatsCan() {
           src={covidStatsThumbnail}
           alt="The Covid Stats Can webpage's landing page"
         />
-        <figcaption className={styles.imageCaption}>Website</figcaption>
+        <figcaption className={styles.imageCaption}>Web App</figcaption>
       </figure>
       <div className={styles.articleDescription}>
         <p>
@@ -30,14 +31,14 @@ function CovidStatsCan() {
         <a
           href="https://github.com/ThomasNLy/project_3_covid_stat_website"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Source Code
         </a>
         <a
           href="https://thomasnly.github.io/project_3_covid_stat_website/"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Go to website
         </a>
