@@ -38,6 +38,7 @@
 .projectLink {
   display: block;
   margin-bottom: var(--project-link-spacing-bottom);
+  max-width: fit-content;
 }
 
 .articleDescription {
