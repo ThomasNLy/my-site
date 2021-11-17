@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css-modules/ProjectArticle.module.css";
+import linkStyles from "../css-modules/AnimatedLinks.module.css";
 import loginSystemThumbnail from "../../images/login_system_thumbnail.png";
 import loginSystemForgotpasswordPic from "../../images/login_system_forgotpassword.png";
 import loginSystemProfilePic from "../../images/login_system_profile.png";
@@ -46,14 +47,14 @@ function LoginSystem() {
         <a
           href="https://github.com/ThomasNLy/project_2_login_page"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Source Code
         </a>
         <a
           href="https://thomasnly.github.io/project_2_login_page/"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Go to website
         </a>
@@ -72,13 +73,13 @@ function LoginSystem() {
       </div>
       <div className={styles.articleDescription}>
         <p>
-          One of the most important things I wanted to focus on with this
-          project was the UI and UX. I wanted to ensure that feedback was given
-          whenever a user interacted with the website. Such as implementing a
-          banner to scroll down on the forgot password page to let them know an
-          email has been sent to reset their password. Along with that was
-          having a modal pop up if they chose to delete their account to focus
-          their attention on the decision they were about to make.{" "}
+          Another thing i wanted to focus on was implementing my knowledge of
+          UI/UX. I wanted to ensure that feedback was given whenever a user
+          interacted with the website. Such as implementing a banner to scroll
+          down on the forgot password page to let them know an email has been
+          sent to reset their password. Along with that was having a modal pop
+          up if they chose to delete their account to focus their attention on
+          the decision they were about to make.
         </p>
       </div>
     </article>

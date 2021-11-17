@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css-modules/ProjectArticle.module.css";
+import linkStyles from "../css-modules/AnimatedLinks.module.css";
 
 import phostopThumbnail from "../../images/phostop_thumbnail.png";
 import phostopHomepage from "../../images/phostop_homepage.png";
@@ -26,7 +27,7 @@ function PhoStop() {
           href="https://github.com/ThomasNLy/project_1_restaurant"
           target="_blank"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Source Code
         </a>
@@ -34,7 +35,7 @@ function PhoStop() {
           href="https://thomasnly.github.io/project_1_restaurant/"
           target="_blank"
           rel="noreferrer"
-          className={styles.projectLink}
+          className={`${styles.projectLink} ${linkStyles.animatedLinkBlue}`}
         >
           Go to website
         </a>
