@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.55465ae1.chunk.css",
-    "main.js": "/my-site/static/js/main.4ca0db3b.chunk.js",
-    "main.js.map": "/my-site/static/js/main.4ca0db3b.chunk.js.map",
-    "runtime-main.js": "/my-site/static/js/runtime-main.bf65e210.js",
-    "runtime-main.js.map": "/my-site/static/js/runtime-main.bf65e210.js.map",
-    "static/js/2.ec249acf.chunk.js": "/my-site/static/js/2.ec249acf.chunk.js",
-    "static/js/2.ec249acf.chunk.js.map": "/my-site/static/js/2.ec249acf.chunk.js.map",
-    "static/js/3.5e5cf4ef.chunk.js": "/my-site/static/js/3.5e5cf4ef.chunk.js",
-    "static/js/3.5e5cf4ef.chunk.js.map": "/my-site/static/js/3.5e5cf4ef.chunk.js.map",
+    "main.js": "/my-site/static/js/main.d3c352ed.chunk.js",
+    "main.js.map": "/my-site/static/js/main.d3c352ed.chunk.js.map",
+    "runtime-main.js": "/my-site/static/js/runtime-main.5f8233f7.js",
+    "runtime-main.js.map": "/my-site/static/js/runtime-main.5f8233f7.js.map",
+    "static/js/2.340cbe4a.chunk.js": "/my-site/static/js/2.340cbe4a.chunk.js",
+    "static/js/2.340cbe4a.chunk.js.map": "/my-site/static/js/2.340cbe4a.chunk.js.map",
+    "static/js/3.28d424dd.chunk.js": "/my-site/static/js/3.28d424dd.chunk.js",
+    "static/js/3.28d424dd.chunk.js.map": "/my-site/static/js/3.28d424dd.chunk.js.map",
     "index.html": "/my-site/index.html",
     "static/css/main.55465ae1.chunk.css.map": "/my-site/static/css/main.55465ae1.chunk.css.map",
-    "static/js/2.ec249acf.chunk.js.LICENSE.txt": "/my-site/static/js/2.ec249acf.chunk.js.LICENSE.txt",
+    "static/js/2.340cbe4a.chunk.js.LICENSE.txt": "/my-site/static/js/2.340cbe4a.chunk.js.LICENSE.txt",
     "static/media/covid_stats_statusBar.3e383d31.png": "/my-site/static/media/covid_stats_statusBar.3e383d31.png",
     "static/media/covid_stats_thumbnail.ae17675f.png": "/my-site/static/media/covid_stats_thumbnail.ae17675f.png",
     "static/media/covid_stats_thumbnail_mobile.08340946.png": "/my-site/static/media/covid_stats_thumbnail_mobile.08340946.png",
@@ -23,9 +23,9 @@
     "static/media/phostop_thumbnail_mobile.46cfd89f.png": "/my-site/static/media/phostop_thumbnail_mobile.46cfd89f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf65e210.js",
-    "static/js/2.ec249acf.chunk.js",
+    "static/js/runtime-main.5f8233f7.js",
+    "static/js/2.340cbe4a.chunk.js",
     "static/css/main.55465ae1.chunk.css",
-    "static/js/main.4ca0db3b.chunk.js"
+    "static/js/main.d3c352ed.chunk.js"
   ]
 }
