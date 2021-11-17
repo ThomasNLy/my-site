@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 
@@ -17,7 +17,7 @@ import PhoStop from "./components/pages/PhoStop";
 function App() {
   return (
     <React.Fragment>
-      <HashRouter basename="/">
+      <Router>
         <NavBar />
         <div className="container">
           <div className="page-content">
@@ -31,7 +31,7 @@ function App() {
           </div>
           <Footer />
         </div>
-      </HashRouter>
+      </Router>
     </React.Fragment>
   );
 }
