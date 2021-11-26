@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.53df4cab.chunk.css",
-    "main.js": "/my-site/static/js/main.b0d29f45.chunk.js",
-    "main.js.map": "/my-site/static/js/main.b0d29f45.chunk.js.map",
+    "main.js": "/my-site/static/js/main.609a43cf.chunk.js",
+    "main.js.map": "/my-site/static/js/main.609a43cf.chunk.js.map",
     "runtime-main.js": "/my-site/static/js/runtime-main.5f8233f7.js",
     "runtime-main.js.map": "/my-site/static/js/runtime-main.5f8233f7.js.map",
     "static/js/2.5af10376.chunk.js": "/my-site/static/js/2.5af10376.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.53df4cab.chunk.css.map": "/my-site/static/css/main.53df4cab.chunk.css.map",
     "static/js/2.5af10376.chunk.js.LICENSE.txt": "/my-site/static/js/2.5af10376.chunk.js.LICENSE.txt",
     "static/media/covid_stats_statusBar.3e383d31.png": "/my-site/static/media/covid_stats_statusBar.3e383d31.png",
-    "static/media/covid_stats_thumbnail.ae17675f.png": "/my-site/static/media/covid_stats_thumbnail.ae17675f.png",
+    "static/media/covid_stats_thumbnail.8ba2596b.png": "/my-site/static/media/covid_stats_thumbnail.8ba2596b.png",
     "static/media/covid_stats_thumbnail_mobile.08340946.png": "/my-site/static/media/covid_stats_thumbnail_mobile.08340946.png",
     "static/media/login_system_forgotpassword.ce898491.png": "/my-site/static/media/login_system_forgotpassword.ce898491.png",
     "static/media/login_system_profile.f0cb75ca.png": "/my-site/static/media/login_system_profile.f0cb75ca.png",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.5f8233f7.js",
     "static/js/2.5af10376.chunk.js",
     "static/css/main.53df4cab.chunk.css",
-    "static/js/main.b0d29f45.chunk.js"
+    "static/js/main.609a43cf.chunk.js"
   ]
 }
